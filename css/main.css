@@ -1,0 +1,41 @@
+/** BASE STYLES **/
+body {
+  color: white;
+  background-color: hsl(218, 28%, 13%);
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/** NAV STYLES **/
+
+/** GET STARTED STYLES **/
+
+/** OFFERINGS STYLES **/
+
+/** PERFORMANCE STYLES **/
+
+/** SIGN UP STYLES **/
+
+/** FOOTER/BOTTOM STYLES **/
+
+/** ATTRIBUTION STYLES **/
+
+
+@media all and (min-width: 1200px) {
+  /** DESKTOP STYLES HERE **/
+
+  /** BASE STYLES **/
+
+
+
+}
