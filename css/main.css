@@ -2,12 +2,18 @@
 body {
   color: white;
   background-color: hsl(218, 28%, 13%);
-  padding: 0;
-  margin: 0;
-  max-width: 100%;
-  overflow-x: hidden;
-  position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	font-size: 1em;
+	max-width: 1200px;
+	width: 90%;
+	flex-flow: row wrap;
+	padding: 0 5%;
+}
+
+html {
+  font-size: 14px;
 }
 
 ul {
@@ -16,9 +22,36 @@ ul {
   margin: 0;
 }
 
-/** NAV STYLES **/
+h1 {
+  font-size: 2em;
+}
 
-/** GET STARTED STYLES **/
+img {
+  max-width: 100%;
+}
+
+/** NAV STYLES **/
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-top: 10px;
+}
+
+.header img {
+  width: 20%;
+  padding-right: 30%;
+}
+
+.header ul li {
+  display: inline-block;
+  font-size: .8em;
+  margin: 0 10px;
+}
+
+/** INTRO STYLES **/
 
 /** OFFERINGS STYLES **/
 
