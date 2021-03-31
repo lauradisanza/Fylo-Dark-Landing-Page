@@ -8,8 +8,10 @@ body {
 	font-size: 1em;
 	max-width: 1200px;
 	width: 90%;
+  margin-left: 5%;
 	flex-flow: row wrap;
-	padding: 0 5%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 html {
@@ -22,12 +24,12 @@ ul {
   margin: 0;
 }
 
-h1 {
-  font-size: 2em;
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
 }
 
 img {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 /** NAV STYLES **/
@@ -43,21 +45,100 @@ img {
 .header img {
   width: 20%;
   padding-right: 30%;
+  margin: 0;
 }
 
 .header ul li {
   display: inline-block;
-  font-size: .8em;
-  margin: 0 10px;
+  font-size: .75em;
+  margin: 0 8px;
 }
 
 /** INTRO STYLES **/
+.intro img {
+  padding-top: 40px;
+  margin-left: 5%;
+}
+
+.intro h1 {
+  font-size: 1.7em;
+  line-height: 2.5rem;
+}
+
+.intro h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+  width: 85%;
+  margin-left: 7.5%;
+}
+
+.intro button {
+  background-color: hsl(176, 68%, 64%);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  height: 40px;
+  margin-top: 10px;
+  width: 225px;
+}
+
+.intro button:hover {
+  transform: scale(1.1);
+}
 
 /** OFFERINGS STYLES **/
+.offerings {
+  padding-top: 100px;
+}
+
+.offering {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 60px;
+}
+
+.offering img {
+  width: 20%;
+}
+
+.offering h3 {
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+
 
 /** PERFORMANCE STYLES **/
+.performance {
+  padding-top: 100px;
+  text-align: left;
+  width: 95%;
+}
+
+.performance img {
+  width: 100%;
+  margin-left: 7%;
+}
+
+.performance a {
+  text-decoration: none;
+  font-size: .95rem;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  padding-bottom: 5px;
+}
+
+#arrow-icon {
+  height: 16px;
+  width: auto;
+  margin-left: 2px;
+  margin-bottom: -3px;
+}
 
 /** SIGN UP STYLES **/
+.testimonials {
+  padding-top: 100px;
+}
 
 /** FOOTER/BOTTOM STYLES **/
 
