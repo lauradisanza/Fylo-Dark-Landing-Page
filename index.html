@@ -12,11 +12,6 @@
   
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 
 
@@ -76,7 +71,7 @@
   </div>
 
   <div class="testimonials">
-    <img src="img/bg-quotes.png" alt="Quotation Marks">
+    <img class="quotation-marks" src="img/bg-quotes.png" alt="Quotation Marks">
     <div class="testimonial" id="testimonial-1">
       <p class="quote">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
       <div class="author" id="author-1">
@@ -113,47 +108,51 @@
     <div class="signup">
       <h3>Get early access today</h3>
       <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-      <!-- How to put the fill in part for the button? Is this and the form a button? -->
-      <button type="button">Get Started For Free</button>
+      <form action="" method="get" name="form" id="form">
+        <input type="email" name="email" placeholder="email@example.com" required>
+        <button type="button">Get Started For Free</button>
+      </form>
     </div>
   </div>  
 
   <div class="footer">
-    <img src="img/logo.svg">
-    <div class="contact">
-      <p id="location">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    <img id="logo" src="img/logo.svg">
+    <div class="contact">     
+      <div class="location-info">
+        <img src="img/icon-location.svg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>   
       <div id="contant-info">
-        <p id="phone"><a href="#" target="_blank"></a>+1-543-123-4567</p>
-        <p id="email"><a href="mailto:ldisanza7@gmail.com">example@fylo.com</a></p>
+        <p id="phone"><img src="img/icon-phone.svg"><a href="#" target="_blank"></a>+1-543-123-4567</p>
+        <p id="email"><img src="img/icon-email.svg"><a href="mailto:ldisanza7@gmail.com" style="color: white">example@fylo.com</a></p>
       </div>
     </div>
     <div class="quick-links">
       <ul id="quick-links-1">
-        <li><a href="https://github.com/lauradisanza" target="_blank">About Us</a></li>
-        <li><a href="https://github.com/lauradisanza" target="_blank">Jobs</a></li>
-        <li><a href="https://github.com/lauradisanza" target="_blank">Press</a></li>
-        <li><a href="https://github.com/lauradisanza" target="_blank">Blog</a></li>
+        <li><a href="https://lauradisanza.com/" target="_blank">About Us</a></li>
+        <li><a href="https://lauradisanza.com/" target="_blank">Jobs</a></li>
+        <li><a href="https://lauradisanza.com/" target="_blank">Press</a></li>
+        <li><a href="https://lauradisanza.com/" target="_blank">Blog</a></li>
       </ul>
       <ul id="quick-links-2">
-        <li><a href="https://github.com/lauradisanza" target="_blank">Contact Us</a></li>
-        <li><a href="https://github.com/lauradisanza" target="_blank">Terms</a></li>
-        <li><a href="https://github.com/lauradisanza" target="_blank">Privacy</a></li>
+        <li><a href="https://lauradisanza.com/" target="_blank">Contact Us</a></li>
+        <li><a href="https://lauradisanza.com/" target="_blank">Terms</a></li>
+        <li><a href="https://lauradisanza.com/" target="_blank">Privacy</a></li>
       </ul>
     </div>
-    <!-- Need to add social media icons -->
     <div class="social">
       <ul id="social">
-        <li><a href="https://github.com/lauradisanza" target="_blank"></a></li>
-        <li><a href="https://github.com/lauradisanza" target="_blank"></a></li>
-        <li><a href="https://github.com/lauradisanza" target="_blank"></a></li>
+        <li><a href="https://lauradisanza.com/" target="_blank"><img src="img/icon-facebook.png" alt="Facebook Icon"></a></li>
+        <li><a href="https://lauradisanza.com/" target="_blank"><img src="img/icon-twitter.png" alt="Twitter Icon"></a></li>
+        <li><a href="https://lauradisanza.com/" target="_blank"><img src="img/icon-instagram.png" alt="Instagram Icon"></a></li>
       </ul>
     </div>
   </div>
  
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/lauradisanza" target="_blank">Laura DiSanza</a>.
+      Challenge by <a href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd" target="_blank" style="color: white">Frontend Mentor</a>. 
+      Coded by <a href="https://lauradisanza.com/" target="_blank" style="color: white">Laura DiSanza</a>.
     </p>
   </footer>
 </body>
