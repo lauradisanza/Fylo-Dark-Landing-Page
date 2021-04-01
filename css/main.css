@@ -1,11 +1,83 @@
 /** BASE STYLES **/
+html {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(218, 28%, 13%);
+  color: white;
+  font-family: 'Open-Sans', sans-serif;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-flow: row wrap;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/** HEADER STYLES **/
+.header {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 5%;
+}
+
+.header img {
+  height: auto;
+  width: 25%;
+}
+
+.header nav ul {
+  padding: 0;
+}
+  /* Do I need inline-block to make the nav all one row? Don't need it in Rouge Pickings project */
+.header nav ul li {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: .9em;
+  font-family: 'Raleway', sans-serif;
+}
+
 /** INTRO STYLES **/
+
+
 /** OFFERINGS STYLES **/
+
+
 /** PERFORMANCE STYLES **/
+
+
 /** TESTIMONIALS STYLES **/
+
+
 /** SIGN-UP STYLES **/
+
+
 /** FOOTER STYLES **/
+
+
 /** ATTRIBUTION STYLES **/
+
+
 
 
 @media all and (min-width: 1200px) {
