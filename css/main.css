@@ -26,6 +26,8 @@ ul {
 
 h1, h2, h3 {
   font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -121,6 +123,10 @@ img {
   margin-left: 7%;
 }
 
+.performance-content {
+  margin-top: 40px;
+}
+
 .performance a {
   text-decoration: none;
   font-size: .95rem;
@@ -138,11 +144,83 @@ img {
 /** SIGN UP STYLES **/
 .testimonials {
   padding-top: 100px;
+  width: 95%;
+}
+
+.testimonials img {
+  width: 7%;
+}
+
+.testimonial {
+  background-color: hsl(219, 30%, 18%);
+  font-size: .85em;
+  padding: 7%;
+  margin: 20px auto;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.quote {
+  line-height: 1.8rem;
+  margin: 0 auto 14px auto;
+}
+
+.author {
+  display: inline-flex;
+}
+
+.author img {
+  height: 2rem;
+  width: auto;
+  border-radius: 24px;
+  margin-right: 10px;
+}
+
+.author-name {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin: 0;
+}
+
+.author-title {
+  font-size: .7em;
+  letter-spacing: 0.1rem;
+  margin: 0;
+  padding-top: 2px;
 }
 
 /** FOOTER/BOTTOM STYLES **/
+.signup-container {
+  margin-top: 100px;
+  background-color: hsl(219, 30%, 18%);
+  border-radius: 5px;
+}
+
+.signup {
+  width: 85%;
+  margin-left: 7.5%;
+  padding: 30px 0;
+}
+
+.signup button {
+  background-color: hsl(176, 68%, 64%);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  height: 40px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.signup button:hover {
+  transform: scale(1.1);
+}
 
 /** ATTRIBUTION STYLES **/
+.footer {
+  padding-top: 100px;
+}
 
 
 @media all and (min-width: 1200px) {
