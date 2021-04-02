@@ -8,7 +8,7 @@ html {
 body {
   background-color: hsl(218, 28%, 13%);
   color: white;
-  font-family: 'Open-Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   display: flex;
   justify-content: left;
@@ -35,6 +35,8 @@ button {
   border: none;
   border-radius: 20px;
   color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
   height: 40px;
   margin-top: 15px;
   width: 70%;
@@ -67,7 +69,7 @@ a {
 .header nav ul {
   padding: 0;
 }
-  /* Do I need inline-block to make the nav all one row? Don't need it in Rouge Pickings project */
+
 .header nav ul li {
   display: inline-block;
   padding: 0 5px;
@@ -92,13 +94,13 @@ a {
 }
 
 .intro p {
-  font-size: 1.06rem;
+  font-size: 1rem;
 }
 
 /** OFFERINGS STYLES **/
 .offerings {
-  width: 80%;
-  margin-left: 10%;
+  width: 85%;
+  margin-left: 7.5%;
   margin-top: 20px;
   text-align: center;
 }
@@ -118,8 +120,8 @@ a {
 
 /** PERFORMANCE STYLES **/
 .performance {
-  width: 82%;
-  margin-left: 9%;
+  width: 85%;
+  margin-left: 7.5%;
   margin-top: 100px;
 }
 
@@ -127,17 +129,144 @@ a {
   max-width: 100%;
 }
 
-/** TESTIMONIALS STYLES **/
+.performance h3 {
+  padding-top: 20px;
+}
 
+.performance a {
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  padding-bottom: 7px;
+}
+
+.performance a img {
+  position: relative;
+  top: 3px;
+}
+
+
+/** TESTIMONIALS STYLES **/
+.testimonials {
+  margin-top: 100px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+        /** Need to fix the Quote Marks "" **/
+
+.testimonial {
+  background-color: hsl(219, 30%, 18%);
+  border-radius: 5px;
+  font-size: .8rem;
+  line-height: 1.5rem;
+  margin-bottom: 20px; 
+  padding: 7%;
+}
+
+.author img {
+  border-radius: 50%;
+  height: auto;
+  width: 12%;
+}
+
+.name-title {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.author-name {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.author-title {
+  font-size: .85em;
+  margin: 0;
+  padding: 0;
+}
 
 /** SIGN-UP STYLES **/
+.signup-container {
+  background-color: hsl(217, 28%, 15%);
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 100px;
+  text-align: center;
+}
 
+.signup {
+  width: 85%;
+  margin: 40px 7.5%;
+}
+
+input {
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 40px;
+  margin-top: 15px;
+  padding-left: 10%;
+  width: 100%;
+}
+
+.signup button {
+  width: 100%;
+}
 
 /** FOOTER STYLES **/
+.footer {
+  margin-left: 5%;
+  margin-top: 100px;
+  width: 90%;
+}
+
+    /** HOW DO I WANT TO DO THE LOCATION SHIT???? **/
+
+.quick-links-1, .quick-links-2 {
+  margin: 40px 0 0 0;
+  padding: 0;
+}
+
+.quick-links li {
+  margin-top: 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.social ul {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.social ul img {
+  height: 30px;
+  width: auto;
+}
+
 
 
 /** ATTRIBUTION STYLES **/
+footer {
+  font-size: .9rem;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 50px;
+  text-align: center;
+}
 
+footer a:hover {
+  text-decoration: underline;
+}
 
 
 
