@@ -18,7 +18,7 @@ body {
   padding: 0;
 }
 
-h1, h2, h3 {
+h1, h3 {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -53,7 +53,7 @@ a {
 
 /** HEADER STYLES **/
 .header {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,8 +110,8 @@ a {
 }
 
 .offering img {
-  height: auto;
-  width: 20%;
+  height: 60px;
+  width: auto;
 }
 
 .offering h3 {
@@ -125,7 +125,7 @@ a {
   margin-top: 100px;
 }
 
-.performance img {
+.performance-illustration {
   max-width: 100%;
 }
 
@@ -290,14 +290,101 @@ footer a:hover {
 
 
 @media all and (min-width: 1200px) {
-  /** DESKTOP STYLES HERE **/
+/** DESKTOP STYLES HERE **/
 
   /** BASE STYLES **/
+  button {
+    border-radius: 50px;
+    height: 50px;
+    margin-top: 15px;
+    width: 40%;
+  }
 
+  /** HEADER STYLES **/
+  .intro {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .header img {
+    width: 15%;
+  }
+
+  .header nav ul li {
+    padding: 0 20px;
+    font-size: 1em;
+  }
+
+  /** INTRO STYLES **/
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .intro p {
+    font-size: 1.5rem;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  /** OFFERINGS STYLES **/
+  .offerings {
+    margin-top: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .offering {
+    width: 32%;
+    margin: 30px 9%;
+  }
+
+  /** PERFORMANCE STYLES **/
+  .performance {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .performance-illustration {
+    width: 45%;
+  }
+  
+  .performance-content {
+    width: 38%;
+  }
+
+  .performance h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .performance a {
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    padding-bottom: 7px;
+  }
+  
+  .performance a img {
+    position: relative;
+    top: 3px;
+  }
+
+  /** TESTIMONIALS STYLES **/
+
+  /** SIGN-UP STYLES **/
+
+  /** FOOTER STYLES **/
 
 /** Grid styles for Desktop
     display: grid
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
     **/
+
+  /** ATTRIBUTION STYLES **/
+
 }
