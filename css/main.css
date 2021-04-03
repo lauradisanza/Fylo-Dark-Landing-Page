@@ -151,7 +151,11 @@ a {
   margin-left: 10%;
 }
 
-        /** Need to fix the Quote Marks "" **/
+.quotation-marks {
+  width: 8%;
+  height: auto;
+  margin-bottom: -3px;
+}
 
 .testimonial {
   background-color: hsl(219, 30%, 18%);
@@ -216,12 +220,27 @@ input {
 
 /** FOOTER STYLES **/
 .footer {
-  margin-left: 5%;
+  margin-left: 10%;
   margin-top: 100px;
-  width: 90%;
+  width: 80%;
 }
 
-    /** HOW DO I WANT TO DO THE LOCATION SHIT???? **/
+  /** Location done in a grid, copied from someone's solution **/
+.contact {
+  margin-top: 30px;
+}
+
+.location-info, .phone, .email {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: auto;
+  align-items: start;
+}
+
+.contact img {
+  margin-top: 14px;
+}
+
 
 .quick-links-1, .quick-links-2 {
   margin: 40px 0 0 0;
@@ -276,5 +295,9 @@ footer a:hover {
   /** BASE STYLES **/
 
 
-
+/** Grid styles for Desktop
+    display: grid
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    **/
 }
