@@ -18,6 +18,10 @@ body {
   padding: 0;
 }
 
+section {
+  width: 100%;
+}
+
 h1, h3 {
   font-family: 'Raleway', sans-serif;
 }
@@ -53,7 +57,11 @@ a {
 
 /** HEADER STYLES **/
 .header {
-  width: 100%;
+  background-color: hsl(217, 28%, 15%);
+}
+
+.header-container {
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,18 +87,38 @@ a {
 
 /** INTRO STYLES **/
 .intro {
+  background: linear-gradient(hsl(217, 28%, 15%) 60%, hsl(218, 28%, 13%) 40%);
+}
+
+#background-curve-m {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  top: 180px;
+}
+
+#background-curve-d {
+  display: none;
+}
+
+.intro-container {
   width: 80%;
   margin-left: 10%;
   text-align: center;
 }
 
-.intro img {
+.intro #illustration {
   max-width: 100%;
+  margin-top: -150px;
+  position: relative;
+  z-index: 2;
 }
 
 .intro h1 {
   font-size: 1.7rem;
   padding-top: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .intro p {
@@ -99,6 +127,10 @@ a {
 
 /** OFFERINGS STYLES **/
 .offerings {
+  background-color: hsl(218, 28%, 13%)
+}
+
+.offerings-container {
   width: 85%;
   margin-left: 7.5%;
   margin-top: 20px;
@@ -119,7 +151,7 @@ a {
 }
 
 /** PERFORMANCE STYLES **/
-.performance {
+.performance-container {
   width: 85%;
   margin-left: 7.5%;
   margin-top: 100px;
@@ -145,7 +177,7 @@ a {
 
 
 /** TESTIMONIALS STYLES **/
-.testimonials {
+.testimonials-container {
   margin-top: 100px;
   width: 80%;
   margin-left: 10%;
@@ -190,12 +222,16 @@ a {
 }
 
 /** SIGN-UP STYLES **/
+.signup-form {
+  background: linear-gradient(hsl(218, 28%, 13%) 60%, hsl(216, 53%, 9%) 40%);
+}
 .signup-container {
   background-color: hsl(217, 28%, 15%);
   border-radius: 5px;
   width: 90%;
   margin-left: 5%;
   margin-top: 100px;
+  padding: 15px 0;
   text-align: center;
 }
 
@@ -220,9 +256,14 @@ input {
 
 /** FOOTER STYLES **/
 .footer {
+  max-width: 100%;
+  background-color: hsl(216, 53%, 9%);
+}
+
+.footer-container {
   margin-left: 10%;
   margin-top: 100px;
-  width: 80%;
+  max-width: 80%;
 }
 
   /** Location done in a grid, copied from someone's solution **/
@@ -276,9 +317,9 @@ input {
 
 /** ATTRIBUTION STYLES **/
 footer {
+  background-color: hsl(216, 53%, 9%);
   font-size: .9rem;
-  width: 90%;
-  margin-left: 5%;
+  width: 100%;
   padding-top: 50px;
   text-align: center;
 }
@@ -286,6 +327,7 @@ footer {
 footer a:hover {
   text-decoration: underline;
 }
+
 
 
 
@@ -314,6 +356,16 @@ footer a:hover {
   .intro {
     width: 50%;
     margin-left: 25%;
+  }
+
+  #background-curve-m {
+    display:none;
+  }
+  
+  #background-curve-d {
+    width: 100%;
+    position: relative;
+    z-index: 2;
   }
 
   .intro h1 {
@@ -442,7 +494,7 @@ footer a:hover {
     margin-top: 60px;
   }
 
-  .footer-container {
+  .footer-info {
     display: flex;
     flex-flow: nowrap;
     justify-content: space-between;
