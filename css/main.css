@@ -225,6 +225,7 @@ a {
 .signup-form {
   background: linear-gradient(hsl(218, 28%, 13%) 60%, hsl(216, 53%, 9%) 40%);
 }
+
 .signup-container {
   background-color: hsl(217, 28%, 15%);
   border-radius: 5px;
@@ -314,7 +315,6 @@ input {
 }
 
 
-
 /** ATTRIBUTION STYLES **/
 footer {
   background-color: hsl(216, 53%, 9%);
@@ -354,8 +354,7 @@ footer a:hover {
 
   /** INTRO STYLES **/
   .intro {
-    width: 50%;
-    margin-left: 25%;
+    background: hsl(217, 28%, 15%);
   }
 
   #background-curve-m {
@@ -363,24 +362,44 @@ footer a:hover {
   }
   
   #background-curve-d {
+    display: flex;
     width: 100%;
     position: relative;
     z-index: 2;
+    top: 600px;
+  }
+  
+  .intro-container {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .intro #illustration {
+    margin-top: -500px;
   }
 
   .intro h1 {
     font-size: 3rem;
+    position: relative;
+    z-index: 2;
   }
 
   .intro p {
     font-size: 1.5rem;
     width: 90%;
     margin-left: 5%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .intro button {
+    margin-bottom: 200px;
+    position: relative;
+    z-index: 2;
   }
 
   /** OFFERINGS STYLES **/
-  .offerings {
-    margin-top: 70px;
+  .offerings-container {
     display: flex;
     flex-flow: row wrap;
     width: 80%;
@@ -393,7 +412,7 @@ footer a:hover {
   }
 
   /** PERFORMANCE STYLES **/
-  .performance {
+  .performance-container {
     width: 90%;
     margin-left: 5%;
     display: flex;
@@ -426,6 +445,10 @@ footer a:hover {
   }
 
   /** TESTIMONIALS STYLES **/
+  .testimonials-container {
+    padding-top: 30px;
+  }
+
   .testimonial-container {
     display: flex;
     flex-flow: nowrap;
@@ -488,7 +511,7 @@ footer a:hover {
   }
 
   /** FOOTER STYLES **/
-  .footer {
+  .footer-container {
     margin-left: 7.5%;
     width: 85%;
     margin-top: 60px;
